@@ -1,0 +1,269 @@
+/*:::::Google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*:::::Logo home*/
+.home {
+    pointer-events: none;
+    margin-left: 0%;
+    margin-top: -8%;
+    margin-bottom: -11%;
+}
+
+/*:::::Nav*/
+.hero {
+    height: 100hv;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.logo {
+    margin-left: -10%;
+    color: #c34f0c;
+    font-size: 28px;
+}
+
+span {
+    color: rgb(255, 255, 255);
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+nav ul li a {
+    color: #c34f0c;
+    text-decoration: orangered;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ff6a00;
+    transition: .3s;
+}
+
+button {
+    border: none;
+    background: #ff6a00;
+    padding: 22px 40px;
+    border-radius: 30px;
+    box-shadow: 0 0 40px #c34f0c, 0 0 40px #ffffff, 0 0 100px #c34f0c;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    transition: .4s;
+}
+
+button:hover {
+    transform: scale(1.3);
+    cursor: pointer;
+    color: #f65a00;
+    background-color: #ffffff;
+    box-shadow: 0 0 40px #c34f0c, 0 0 40px #ffffff, 0 0 100px #c34f0c;
+    transition-delay: .8;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+/*:::::Nav FIN*/
+
+/*:::::Section Galeria de imagenes*/
+section {
+    display: flex;
+    width: 500px;
+    height: 430px;
+}
+
+section img {
+    width: max-content;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+
+section img:hover {
+    background-color: #c34f0c;
+    box-shadow: 0 0 40px #c34f0c, 0 0 40px #ffffff, 0 0 100px #c34f0c;
+    transition-delay: 1s;
+    cursor: crosshair;
+    width: 150px;
+    opacity: 1;
+    filter: contrast(100%);
+}
+
+#img1 {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #c34f0c);
+}
+
+/*:::::Card emblemas*/
+.card {
+    background-color: transparent;
+    margin-left: auto;
+}
+
+/*:::::Pie de pagina/Footer*/
+.pie-pagina {
+    width: 100%;
+    background-color: #0a141d;
+}
+
+.pie-pagina .grupo-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.pie-pagina .grupo-1 .box figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pagina .grupo-1 .box figure img {
+    width: 250px;
+}
+
+.pie-pagina .grupo-1 .box h2 {
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.pie-pagina .grupo-1 .box p {
+    color: #efefef;
+    margin-bottom: 10px;
+}
+
+.pie-pagina .grupo-1 .red-social a {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+.pie-pagina .grupo-1 .red-social a:hover {
+    color: #c55d09;
+}
+
+.pie-pagina .grupo-2 {
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.pie-pagina .grupo-2 small {
+    font-size: 15px;
+}
+
+@media screen and (max-width:800px) {
+    .pie-pagina .grupo-1 {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+}
+
+/*:::::Pie de pagina/Footer FIN*/
+
+body {
+    background: #c34f0c;
+    background-color: rgb(218, 201, 182);
+}
+
+/*:::::Tablas Digimon*/
+.tarjeta {
+    background-color: #e3e3e3;
+    margin: 2%;
+    display: inline-table;
+}
+
+.card-img-top:hover {
+    margin: auto;
+    display: flex;
+    width: 230px;
+    height: 220px;
+}
+
+/*BUSCAR BAR*/
+.Buscar {
+    display: inline-flex;
+    align-items: center;
+    background: linear-gradient(194deg, #c34f0c, #ff5500);
+    color: #fff;
+    padding: 1px;
+    border-radius: 40px;
+}
+
+.Buscar :is(input, button) {
+    color: white;
+    border: none;
+    background: transparent;
+    outline: none;
+    font-size: 16px;
+}
+
+.Buscar__input {
+    width: 0;
+    transition: width .8s;
+}
+
+.Buscar__button {
+    display: grid;
+    place-items: center;
+    width: 20px;
+    height: px;
+    cursor: pointer;
+    transition: color .25s;
+}
+
+.Buscar__button:hover {
+    color: #f65a00;
+    background-color: #ffffff;
+    box-shadow: 0 0 40px #c34f0c, 0 0 40px #ffffff, 0 0 100px #c34f0c;
+    transition-delay: 1s;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+.Buscar:focus-within input {
+    width: 180px;
+}
+
+
+
+/*BUSCAR BAR FIN*/
